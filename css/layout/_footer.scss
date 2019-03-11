@@ -1,53 +1,65 @@
-.footer{
+.footer {
     background: red;
-    &-sidebars{
+    border-top: 2px solid greenyellow;
+    &-sidebars {
         background: blue;
-        .sidebar-footer{
+        .sidebar-footer {
             padding-bottom: 12px;
             padding-top: 8px;
-            &-title{
+            &-title {
                 text-transform: uppercase;
                 letter-spacing: 0.1em;
                 font-family: $libre_Baskerville;
                 color: white;
-                &::after{
+                padding-bottom: 12px;
+                padding-top: 18px;
+                &::after {
                     content: '';
-                    width: 30%;
+                    width: 35%;
                     height: 1px;
                     background: white;
                     position: relative;
                     display: block;
                 }
             }
-            &-paragraph{
-                line-height: 24px;
+            &-paragraph {
+                line-height: 28px;
                 color: white;
+                padding-top: 12px;
+                padding-bottom: 8px;
+                font-size: 14px;
             }
-            &-menu{
+            &-menu {
                 //list-style-image: url('../img/star.png');
-               list-style: none;
+                list-style: none;
+                padding-top: 6px;
                 //list-style-position: outside;
-                li{
-                    &:before{
+                li {
+                    border-bottom: 1px dotted greenyellow;
+                    margin-bottom: 2px;
+                    padding-bottom: 2px;
+                    &:before {
                         content: '';
                         background: url('../img/star.png');
                         width: 10px;
                         height: 10px;
                         position: relative;
+                        top: -1px;
+                        right: 5px;
                         display: inline-block;
                         background-size: cover;
-
                     }
-                    
+                    a {
+                        color: red;
+                    }
                 }
             }
-            
         }
     }
-    &-copy-rigth{
+    &-copy-rigth {
         background: black;
         color: white;
-
-        font-size: 15px;
+        font-size: 14px;
+        padding: 8px;
     }
 }
