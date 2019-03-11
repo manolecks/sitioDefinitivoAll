@@ -1,0 +1,21 @@
+/* ********** Mixins ********** */
+@mixin mq($bp) {
+  @if map-has-key($breakpoints, $bp) {
+    @media screen and ( min-width: map-get($breakpoints, $bp) ) {
+      @content;
+    }
+  } @else {
+    @media screen and ( min-width: $bp ) {
+      @content;
+    }
+  }
+}
+
+
+
+@mixin fontawesome-icon {
+  font-family: $font_Awesomme;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

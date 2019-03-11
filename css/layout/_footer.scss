@@ -1,0 +1,53 @@
+.footer{
+    background: red;
+    &-sidebars{
+        background: blue;
+        .sidebar-footer{
+            padding-bottom: 12px;
+            padding-top: 8px;
+            &-title{
+                text-transform: uppercase;
+                letter-spacing: 0.1em;
+                font-family: $libre_Baskerville;
+                color: white;
+                &::after{
+                    content: '';
+                    width: 30%;
+                    height: 1px;
+                    background: white;
+                    position: relative;
+                    display: block;
+                }
+            }
+            &-paragraph{
+                line-height: 24px;
+                color: white;
+            }
+            &-menu{
+                //list-style-image: url('../img/star.png');
+               list-style: none;
+                //list-style-position: outside;
+                li{
+                    &:before{
+                        content: '';
+                        background: url('../img/star.png');
+                        width: 10px;
+                        height: 10px;
+                        position: relative;
+                        display: inline-block;
+                        background-size: cover;
+
+                    }
+                    
+                }
+            }
+            
+        }
+    }
+    &-copy-rigth{
+        background: black;
+        color: white;
+
+        font-size: 15px;
+    }
+}
