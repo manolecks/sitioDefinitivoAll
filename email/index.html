@@ -1,15 +1,95 @@
 <!DOCTYPE html>
-<html></html>
+<html>
 <head>
     <title>Diseño de mail</title>
+    <style>
+      *{
+        box-sizing: border-box;
+      }
+      body{
+          background: #eee;
+      }
+      table{
+        border-collapse: collapse;
+        width: 100%;
+      }
+      @media screen and (max-width: 600px) {
+       table {
+           width:100%;
+           
+       }
+       thead {
+           display: none;
+       }
+       tr:nth-of-type(2n) {
+           background-color: inherit;
+       }
+       tr td:first-child {
+           background: #f0f0f0;
+           font-weight:bold;
+           font-size:1.1em;
+           line-height: 23px;
+           
+       }
+       tbody td {
+           display: block;
+           text-align:center;
+           
+       }
+       tbody td:before {
+           content: attr(data-th);
+           display: block;
+           text-align:center;
+           
+       }
+}
+    </style>
 </head>
 <body>
-    <table width="600" class="resposive-table">
-      <tr><td>Header</td></tr> 
-      <tr><td>contenido</td></tr> 
-      <tr><td>footer</td><tr> 
-      
-       
-    </table>
+    <table cellpadding="0" cellspacing="0" style="text-align: center; padding: 0; background: white; margin: 0 auto; box-shadow: 2px 2px 4px rgba(0,0,0,0.3); font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;" width="600" class="resposive-table">
+      <tr><td style="background: #bbb; padding: 12px;">Header</td></tr> 
+      <tr>
+          <td>
+            <table>
+               <tr><td>
+                
+                 <p>El motivo por el cual escribo el mail es porque me encuentro interesado en la vancante de Dideñador gráfico y me gustaría ser tomado en cuenta para competir por dicha vancante.</p></td></tr>
+            </table>
+          </td>
+        </tr>
+      <tr>
+        <td>
+        <table>
+          <tr><td>
+            <table style="padding: 6px;">
+              <tr><td><img width="290" height="290" src="img/uno.jpg" alt="imagen base"></td></tr>
+              <tr><td><p style="line-height:22px;">Muestra de trabajos realizados en los últimos 6 meses.</p>
+                <p><a href="#" title="boton cv" style="background: transparent;border: 1px solid tomato; padding: 12px; text-align: center; color: tomato; text-decoration: none; text-transform: uppercase; letter-spacing: 2px; font-size: 13px;border-radius: 50px;">Ir a la pagina</a></p>
+              </td></tr>
+              
+             
+            </table>
+          </td><td><table>
+              <tr><td><img width="290" height="290" src="img/uno.jpg" alt="imagen base"></td></tr>
+              <tr><td><p>Información de cv en formato PDF <br></p>
+                    <p><a href="#" title="boton cv" style="background: transparent;border: 1px solid tomato; padding: 12px; text-align: center; color: tomato; text-decoration: none; text-transform: uppercase; letter-spacing: 2px; font-size: 13px;border-radius: 50px;">Ir a CV</a></p>
+              </td></tr>
+            </table></td></tr>
+        </table>
+      </td></tr> 
+      <tr>
+        <td>
+          <table>
+             <tr><td>
+               <p style="width: 60%; text-align: center; margin: 0 auto; height:1px; background: black; margin-top: 6px; margin-bottom: 6px;"></p>
+               <p style="font-size: 10px; line-height: 12px;">Todos los derechos reservados, no es publicidad es la forma de representar mi trabajo para cualquier contratación o aclaración </p></td></tr>
+          </table>
+        </td>
+      </tr>
+      <tr><td style="background: black; padding: 18px; color:white;">footer</td><tr>
+      </table>
+      <table cellpadding="0" cellspacing="0"  width="600" style="text-align: center; margin: 0 auto;">
+        <tr><td><p>Todos los derechos reservados <a href="#" title="" style="text-decoration: none; color:#009900;">Levemente Verde</a> 2019</p></td></tr>
+      </table>
 </body>
 </html>
