@@ -1,7 +1,7 @@
 /* ********** Mixins ********** */
 @mixin mq($bp) {
   @if map-has-key($breakpoints, $bp) {
-    @media screen and ( min-width: map-get($breakpoints, $bp) ) {
+    @media screen and ( max-width: map-get($breakpoints, $bp) ) {
       @content;
     }
   } @else {

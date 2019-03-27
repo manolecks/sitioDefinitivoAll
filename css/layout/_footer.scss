@@ -38,6 +38,7 @@
                     border-bottom: 1px dotted greenyellow;
                     margin-bottom: 2px;
                     padding-bottom: 2px;
+                    cursor: pointer;
                     &:before {
                         content: '';
                         background: url('../img/star.png');
@@ -51,6 +52,7 @@
                     }
                     a {
                         color: red;
+                        cursor: pointer;
                     }
                 }
             }
